@@ -19,9 +19,7 @@ pipeline{
 			}
 			stage('Test Stage 4'){
 				when{
-					not{
-						branch "master"
-					}
+					branch "master"
 				}
 				steps{
 					echo 'Executing Test stage 4'
