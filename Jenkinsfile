@@ -20,7 +20,6 @@ pipeline{
 			stage('Test Stage 4'){
 				when{
 					not{
-						echo 'Inside master'
 						branch "master"
 					}
 				}
