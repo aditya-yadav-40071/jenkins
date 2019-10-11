@@ -1,3 +1,4 @@
+
 pipeline{
 	agent any 
 		stages{ 
@@ -17,8 +18,13 @@ pipeline{
 				}
 			}
 			stage('Test Stage 4'){
+				when{
+					not{
+						branch "master"
+					}
+				}
 				steps{
-					echo 'Executing Test stage 4222'
+					echo 'Executing Test stage 4'
 				}
 			}				
 		}
