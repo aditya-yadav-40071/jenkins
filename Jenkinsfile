@@ -18,8 +18,13 @@ pipeline{
 			}
 			stage('Test Stage 4'){
 				steps{
-					echo 'Executing Test stage 4222'
+					echo 'Executing Test stage 4'
 				}
-			}				
+			}
+			stage('Test Stage 5'){
+				steps{
+					echo 'Executing Test stage 5'
+				}
+			}					
 		}
 }
