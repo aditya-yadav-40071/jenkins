@@ -18,7 +18,7 @@ pipeline{
 			}
 			stage('Test Stage 4'){
 				steps{
-					echo 'Executing Test stage 4'
+					echo 'Executing Test stage 4222'
 				}
 			}				
 		}
