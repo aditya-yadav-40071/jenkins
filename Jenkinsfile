@@ -19,8 +19,15 @@ pipeline{
 			}
 			stage('Test Stage 4'){
 				when{
-					branch "master"
+						branch "master"
+						echo 'branch is master'
 				}
+
+				when{
+						branch "develop"
+						echo 'branch is develop'
+				}
+
 				steps{
 					echo 'Executing Test stage 4'
 				}
